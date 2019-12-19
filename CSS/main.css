@@ -77,16 +77,20 @@ footer {
     background-color: transparent;
     border: 0; }
 
-body {
+html {
   scroll-behavior: smooth; }
-  body nav {
-    z-index: 1000;
-    background-color: transparent; }
-  @media screen and (min-width: 720px) {
-    body {
-      background-image: url("../svgs/layout.svg");
-      background-size: cover;
-      background-repeat: no-repeat; } }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: smooth; } }
+
+body nav {
+  z-index: 1000;
+  background-color: transparent; }
+@media screen and (min-width: 720px) {
+  body {
+    background-image: url("../svgs/layout.svg");
+    background-size: cover;
+    background-repeat: no-repeat; } }
 
 .banner-logo object {
   width: 100%; }

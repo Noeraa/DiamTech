@@ -3,6 +3,13 @@
 $smallscreen : "(max-width:320px)";
 $mediumscreen : "(max-width:720px)";
 $largescreen: "(max-width:1020px)";
+html{
+    scroll-behavior: smooth;
+    @media (prefers-reduced-motion:reduce){
+    scroll-behavior: smooth;
+
+    }
+}
 body{
     nav{
         z-index: 1000;
@@ -15,7 +22,7 @@ body{
         repeat:no-repeat;
         }
     }
-    scroll-behavior: smooth;
+    
 }
 .banner-logo object{
     width: 100%;
