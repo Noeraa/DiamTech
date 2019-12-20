@@ -3,5 +3,6 @@ $(".offre-illustration").slick({
     autoplay : true,
     centerMode: true,
     infinite : true,
-    centerPadding : 0
+    centerPadding : 0,
+    rtl:false
   });

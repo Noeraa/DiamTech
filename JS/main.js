@@ -13,3 +13,5 @@ var typed=new Typed("#banner-tittle",{
         cursorChar: "_",
         loop:true
 });
+
+

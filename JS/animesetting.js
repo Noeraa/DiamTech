@@ -35,6 +35,38 @@
         } 
     },true);
     })();
+    //anime loader
+var loader=document.querySelector("#loader");
+var webpage=document.querySelector("#webpage");
+    window.addEventListener("load",function(){
+        setTimeout(function(){
+            loader.style.display="none";
+            webpage.style.display="block";
+            anime({
+                targets:webpage,
+                opacity:1,
+                duration:500,
+                delay:0,
+                direction:"normal",
+                easing: "easeInQuad",
+                loop:false,
+                complete : function(anim){
+                    if(anim.completed){
+                        var body=document.querySelector("body");
+                        var script=document.createElement("script");
+                        var text=document.createTextNode('AOS.init({duration:900,delay:100,easing: "ease-in-out-sine",anchorPlacement: "top-bottom",offset:100,disable: function(){return window.innerWidth<720;}});');
+                        script.appendChild(text);
+                        
+                        webpage.appendChild(script);
+    
+                        
+                    }
+                }              
+            });
+        },1500);
+    },false);
+
+
     //anime section/why you choose Diamtech
 var animation= new anime({
     targets: "aside .card",

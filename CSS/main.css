@@ -154,4 +154,8 @@ body nav {
     background-size: cover;
     background-repeat: no-repeat; } }
 
+#webpage {
+  display: none;
+  opacity: 0; }
+
 /*# sourceMappingURL=main.css.map */
