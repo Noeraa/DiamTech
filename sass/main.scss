@@ -1,5 +1,6 @@
 @import "section";
 @import "footer";
+@import "header";
 $smallscreen : "(max-width:320px)";
 $mediumscreen : "(max-width:720px)";
 $largescreen: "(max-width:1020px)";
@@ -24,29 +25,8 @@ body{
     }
     
 }
-.banner-logo object{
-    width: 100%;
+
+#webpage{
+    display: none;
+    opacity: 0;
 }
-.navbar-brand img{
-    width: 100px;
-}
-.theme-title{
-    font-size: 70px;
-    @media screen and #{$smallscreen} {
-        font-size: 30px;
-    }
-    @media screen and #{$mediumscreen} {
-        font-size: 40px;
-    }
-    @media screen and #{$largescreen} {
-        font-size: 50px;
-    }
-font-weight: bold;
-color:#001534;
-}
- .theme-description{
-    font-size: 16px;
-    @media screen and #{$mediumscreen} {
-        font-size: 12px;
-    }
- }
