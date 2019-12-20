@@ -1,0 +1,52 @@
+@import "section";
+@import "footer";
+$smallscreen : "(max-width:320px)";
+$mediumscreen : "(max-width:720px)";
+$largescreen: "(max-width:1020px)";
+html{
+    scroll-behavior: smooth;
+    @media (prefers-reduced-motion:reduce){
+    scroll-behavior: smooth;
+
+    }
+}
+body{
+    nav{
+        z-index: 1000;
+        background-color: transparent;
+    }
+    @media screen and (min-width: 720px) {
+        background: {
+        image: url("../svgs/layout.svg");
+        size: cover;
+        repeat:no-repeat;
+        }
+    }
+    
+}
+.banner-logo object{
+    width: 100%;
+}
+.navbar-brand img{
+    width: 100px;
+}
+.theme-title{
+    font-size: 70px;
+    @media screen and #{$smallscreen} {
+        font-size: 30px;
+    }
+    @media screen and #{$mediumscreen} {
+        font-size: 40px;
+    }
+    @media screen and #{$largescreen} {
+        font-size: 50px;
+    }
+font-weight: bold;
+color:#001534;
+}
+ .theme-description{
+    font-size: 16px;
+    @media screen and #{$mediumscreen} {
+        font-size: 12px;
+    }
+ }

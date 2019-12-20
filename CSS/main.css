@@ -1,0 +1,121 @@
+section .layout-section {
+  display: none; }
+@media screen and (min-width: 720px) {
+  section .layout-section {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 120px; } }
+
+.card {
+  width: 375px; }
+  @media screen and (max-width: 320px) {
+    .card {
+      width: 250px; } }
+  @media screen and (max-width: 720px) {
+    .card {
+      width: 300px; } }
+
+.carte {
+  height: 300px; }
+  .carte img, .carte object {
+    width: 375px;
+    height: 300px; }
+    @media screen and (max-width: 320px) {
+      .carte img, .carte object {
+        width: 250px; } }
+    @media screen and (max-width: 720px) {
+      .carte img, .carte object {
+        width: 300px; } }
+
+article .offre-title {
+  font-size: 40px; }
+  @media screen and (max-width: 320px) {
+    article .offre-title {
+      font-size: 20px; } }
+  @media screen and (max-width: 720px) {
+    article .offre-title {
+      font-size: 30px; } }
+article .offre-illustration img {
+  width: 50%; }
+  @media screen and (max-width: 320px) {
+    article .offre-illustration img {
+      width: 100%; } }
+  @media screen and (max-width: 720px) {
+    article .offre-illustration img {
+      width: 70%; } }
+article .offre-description {
+  font-size: 20px; }
+  @media screen and (max-width: 320px) {
+    article .offre-description {
+      font-size: 12px; } }
+  @media screen and (max-width: 720px) {
+    article .offre-description {
+      font-size: 16px; } }
+article ul {
+  list-style: none; }
+article ul li::before {
+  content: "\2022";
+  color: #920606;
+  font-weight: bold;
+  font-size: 30px;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em; }
+
+.card-columns .card {
+  background-color: transparent; }
+  .card-columns .card .card-header {
+    border: 0;
+    background-color: transparent; }
+.card-columns .card-body {
+  height: 100px; }
+
+footer {
+  background-color: #001534; }
+  footer .card {
+    background-color: transparent;
+    border: 0; }
+
+html {
+  scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: smooth; } }
+
+body nav {
+  z-index: 1000;
+  background-color: transparent; }
+@media screen and (min-width: 720px) {
+  body {
+    background-image: url("../svgs/layout.svg");
+    background-size: cover;
+    background-repeat: no-repeat; } }
+
+.banner-logo object {
+  width: 100%; }
+
+.navbar-brand img {
+  width: 100px; }
+
+.theme-title {
+  font-size: 70px;
+  font-weight: bold;
+  color: #001534; }
+  @media screen and (max-width: 320px) {
+    .theme-title {
+      font-size: 30px; } }
+  @media screen and (max-width: 720px) {
+    .theme-title {
+      font-size: 40px; } }
+  @media screen and (max-width: 1020px) {
+    .theme-title {
+      font-size: 50px; } }
+
+.theme-description {
+  font-size: 16px; }
+  @media screen and (max-width: 720px) {
+    .theme-description {
+      font-size: 12px; } }
+
+/*# sourceMappingURL=main.css.map */

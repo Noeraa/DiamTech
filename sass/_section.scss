@@ -1,0 +1,98 @@
+$smallscreen : "(max-width:320px)";
+$mediumscreen : "(max-width:720px)";
+$largescreen: "(max-width:1020px)";
+section{
+   .layout-section{
+       display: none;
+   }
+    @media screen and (min-width: 720px) {
+       
+    .layout-section{
+        width: 100%;
+        display:block;
+        position: absolute;
+        top:120px;
+    }    
+}
+    
+}
+.card{
+    width: 375px;
+    @media screen and #{$smallscreen} {
+        width: 250px;
+    }
+    @media screen and #{$mediumscreen} {
+        width: 300px;
+    }
+}
+.carte {
+    height: 300px;
+    img,object{
+    width: 375px;
+    height: 300px;
+    @media screen and #{$smallscreen} {
+        width: 250px;
+    }
+    @media screen and #{$mediumscreen} {
+        width: 300px;
+    }
+    }
+}
+article{
+    .offre-title{
+        @media screen and #{$smallscreen} {
+            font-size: 20px;
+        }
+        @media screen and #{$mediumscreen} {
+            font-size: 30px;
+        }
+        font-size: 40px;
+        
+    }
+    .offre-illustration img{
+        width: 50%;
+    @media screen and #{$smallscreen} {
+    width: 100%;
+    }
+    @media screen and #{$mediumscreen} {
+    width: 70%;
+    }
+    }
+    .offre-description{
+        @media screen and #{$smallscreen} {
+            font-size: 12px;
+        }
+        @media screen and #{$mediumscreen} {
+            font-size: 16px;
+        }
+        font-size: 20px;
+    }
+
+    ul {
+        list-style: none; 
+      }
+      
+      ul li::before {
+        content: "\2022";  
+        color: rgb(146, 6, 6); 
+        font-weight: bold;
+        font-size: 30px;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em; 
+      }
+}
+    
+.card-columns{
+    .card{
+        background-color: transparent;
+        .card-header{
+            border: 0;
+            background-color: transparent;
+        }
+    }
+    .card-body{
+        height: 100px;
+        
+    }
+}
