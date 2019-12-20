@@ -1,0 +1,50 @@
+$smallscreen : "(max-width:320px)";
+$mediumscreen : "(max-width:720px)";
+$largescreen: "(max-width:1020px)";
+
+
+$smallscreenbanner : "(max-width:420px)";
+$mediumscreenbanner : "(max-width:720px)";
+$largescreenbanner: "(max-width:1020px)";
+
+
+
+#banner-tittle{
+    height: 300px;
+    @media screen and #{$smallscreenbanner} {
+       height: 400px; 
+    }
+}
+
+.banner-logo object{
+    width: 100%;
+}
+.navbar-brand img{
+    width: 100px;
+}
+.theme-title{
+    font-size: 70px;
+    @media screen and #{$smallscreen} {
+       
+        font-size: 30px;
+    }
+    @media screen and #{$mediumscreen} {
+        font-size: 40px;
+      
+
+    }
+    @media screen and #{$largescreen} {
+        font-size: 50px;
+
+    }
+font-weight: bold;
+color:#001534;
+}
+ .theme-description{
+     font-family:"DejaVu Sans Mono Oblique","DejaVu Serif Book","FreeSans Regular";
+    font-size: 26px;
+    color:#001534;
+    @media screen and #{$mediumscreen} {
+        font-size: 16px;
+    }
+ }

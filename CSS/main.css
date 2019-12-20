@@ -7,6 +7,9 @@ section .layout-section {
     position: absolute;
     top: 120px; } }
 
+.container-product-card .card-text {
+  font-size: 16px; }
+
 .card {
   width: 375px; }
   @media screen and (max-width: 320px) {
@@ -28,6 +31,14 @@ section .layout-section {
       .carte img, .carte object {
         width: 300px; } }
 
+.card-columns .card {
+  background-color: transparent; }
+  .card-columns .card .card-header {
+    border: 0;
+    background-color: transparent; }
+.card-columns .card-body {
+  height: 100px; }
+
 article .offre-title {
   font-size: 40px; }
   @media screen and (max-width: 320px) {
@@ -44,6 +55,8 @@ article .offre-illustration img {
   @media screen and (max-width: 720px) {
     article .offre-illustration img {
       width: 70%; } }
+article .slick-track {
+  height: 300px; }
 article .offre-description {
   font-size: 20px; }
   @media screen and (max-width: 320px) {
@@ -63,13 +76,28 @@ article ul li::before {
   width: 1em;
   margin-left: -1em; }
 
-.card-columns .card {
-  background-color: transparent; }
-  .card-columns .card .card-header {
-    border: 0;
-    background-color: transparent; }
-.card-columns .card-body {
-  height: 100px; }
+aside .card {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+
+aside .card:hover {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate; }
 
 footer {
   background-color: #001534; }
@@ -77,20 +105,11 @@ footer {
     background-color: transparent;
     border: 0; }
 
-html {
-  scroll-behavior: smooth; }
-  @media (prefers-reduced-motion: reduce) {
-    html {
-      scroll-behavior: smooth; } }
-
-body nav {
-  z-index: 1000;
-  background-color: transparent; }
-@media screen and (min-width: 720px) {
-  body {
-    background-image: url("../svgs/layout.svg");
-    background-size: cover;
-    background-repeat: no-repeat; } }
+#banner-tittle {
+  height: 300px; }
+  @media screen and (max-width: 420px) {
+    #banner-tittle {
+      height: 400px; } }
 
 .banner-logo object {
   width: 100%; }
@@ -113,9 +132,26 @@ body nav {
       font-size: 50px; } }
 
 .theme-description {
-  font-size: 16px; }
+  font-family: "DejaVu Sans Mono Oblique","DejaVu Serif Book","FreeSans Regular";
+  font-size: 26px;
+  color: #001534; }
   @media screen and (max-width: 720px) {
     .theme-description {
-      font-size: 12px; } }
+      font-size: 16px; } }
+
+html {
+  scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: smooth; } }
+
+body nav {
+  z-index: 1000;
+  background-color: transparent; }
+@media screen and (min-width: 720px) {
+  body {
+    background-image: url("../svgs/layout.svg");
+    background-size: cover;
+    background-repeat: no-repeat; } }
 
 /*# sourceMappingURL=main.css.map */
